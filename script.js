@@ -111,6 +111,13 @@ qSel('.menu-closer').addEventListener('click',()=>{
     qSel('aside').style.left = '100vw';    
 });
 
+qSel('.cart--finalizar').addEventListener('click',()=>{
+    cart = [];
+    alert("Compra finalizada com sucesso!");
+    updateCart();
+    closeModal();
+})
+
 function updateCart(){
     qSel('.menu-openner span').innerHTML = cart.length;
 
